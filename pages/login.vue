@@ -1,7 +1,7 @@
 <template>
     <div class="login">
         <input type="text">请输入账号</input>
-        <button>点击登录</button>
+        <button class="text" @click="handleLogin">点击登录</button>
     </div>
 </template>
 
@@ -9,6 +9,16 @@
 definePageMeta({
     layout: 'empty'
 })
+
+const btnColor = ref('red')
+
+function handleLogin() {
+    btnColor.value = 'blue'
+}
 </script>
 
-<style></style>
+<style>
+.text {
+  color: v-bind(btnColor);
+}
+</style>
