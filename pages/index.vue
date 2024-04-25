@@ -9,10 +9,10 @@
 
 <script setup lang="ts">
 // Use a static import for server-side compatibility
-import '~/assets/css/first.css'
+// import '~/assets/css/first.css'
 
 // Caution: Dynamic imports are not server-side compatible
-import('~/assets/css/first.css')
+// import('~/assets/css/first.css')
 
 
 const runtimeConfig = useRuntimeConfig()
